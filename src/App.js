@@ -31,7 +31,7 @@ class App extends React.Component {
               },
             },
             () => {
-              console.log(this.setState);
+              console.log(this.state);
             }
           );
         });
