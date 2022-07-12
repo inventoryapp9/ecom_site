@@ -4,10 +4,12 @@ import "./collection-preview.styles.scss";
 
 import CollectionItem from "../collection-item/collection-item.component";
 
-const CollectionPreview = ({ title, items }) => {
+const CollectionPreview = ({ title, items, routeName }) => {
   return (
     <div className="collection-preview">
-      <h1 className="title">{title.toUpperCase()}</h1>
+      <a href={`shop/${routeName}`}>
+        <h1 className="title">{title.toUpperCase()}</h1>
+      </a>
       <div className="preview">
         {items
           .filter((item, idx) => idx < 4)
